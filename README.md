@@ -1,10 +1,12 @@
 ![Heimdall Helmet](/Images/heimdall_icon.png "Heimdall Helmet")
 
 ![Build Status](https://api.travis-ci.org/henrinormak/Heimdall.svg)
-![CocoaPods compatible](https://img.shields.io/cocoapods/v/Heimdall.svg)
+<!-- ![CocoaPods compatible](https://img.shields.io/cocoapods/v/Heimdall.svg) -->
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 # Heimdall
+
+The repo forked can only buid in Xcode 10.
 
 In Norse mythology, Heimdall is the gatekeeper of Bifröst, the rainbow road connecting Midgard, realm of the humans, to Asgard, the realm of gods.
 
@@ -20,7 +22,9 @@ Heimdall requires Swift 3 and works with only Xcode 8 and above
 
 ### CocoaPods
 
-Heimdall is available as a CocoaPod, simply add the following line to your Podfile
+~~Heimdall is available as a CocoaPod, simply add the following line to your Podfile~~
+
+Please use the origin Repo is you need use Heimdall as a CocoaPod.
 
 ```ruby
 pod 'Heimdall', '~> 1.1.0'
@@ -37,10 +41,12 @@ use_frameworks!
 Simply include the following line in your Cartfile
 
 ```
-github "henrinormak/Heimdall"
+github "iCell/Heimdall"
 ```
 
-Note that Heimdall produces two frameworks in the Carthage build directory - `Heimdall.framework` and `CommonCrypto.framework`, you only need to include/embed `Heimdall.framework` into your project.
+~~Note that Heimdall produces two frameworks in the Carthage build directory - `Heimdall.framework` and `CommonCrypto.framework`, you only need to include/embed `Heimdall.framework` into your project.~~
+
+Xcode 10 support `CommonCrypto.framework` natively, you don't need build it by yourself.
 
 ### Subproject
 
